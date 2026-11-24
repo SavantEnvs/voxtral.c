@@ -1,0 +1,11 @@
+project: savantenvs/voxtral.c
+target: fuzz_mel_stream
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mel_stream/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_mel_stream
+    libfuzzer: true
+    timeout: 5

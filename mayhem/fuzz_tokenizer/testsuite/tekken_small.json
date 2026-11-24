@@ -1,0 +1,45 @@
+{
+ "config": {
+  "pattern": "x",
+  "num_vocab_tokens": 3
+ },
+ "vocab": [
+  {
+   "rank": 0,
+   "token_bytes": "aGVsbG8=",
+   "token_str": "hello"
+  },
+  {
+   "rank": 1,
+   "token_bytes": "IHdvcmxk",
+   "token_str": " world"
+  },
+  {
+   "rank": 2,
+   "token_bytes": "w6l0w6k=",
+   "token_str": null
+  }
+ ],
+ "special_tokens": [
+  {
+   "rank": 0,
+   "token_str": "<unk>",
+   "is_control": true
+  },
+  {
+   "rank": 1,
+   "token_str": "<s>",
+   "is_control": true
+  },
+  {
+   "rank": 2,
+   "token_str": "</s>",
+   "is_control": true
+  },
+  {
+   "rank": 32,
+   "token_str": "[STREAMING_PAD]",
+   "is_control": true
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+project: savantenvs/voxtral.c
+target: fuzz_safetensors
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_safetensors/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_safetensors
+    libfuzzer: true
+    timeout: 5
